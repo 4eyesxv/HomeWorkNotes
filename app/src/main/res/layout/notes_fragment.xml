@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/custom"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/name_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Название события"
+        android:textColor="@color/black"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/short_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Краткое описание"
+        android:textColor="@color/black"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/detailed_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Детальное описание"
+        android:textColor="@color/black"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/user_notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Заметка"
+        android:textColor="@color/black"
+        android:textSize="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/start_time_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Дата начала"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/end_time_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Дата окончания"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textSize="10dp"
+            android:text="Удалить"
+            android:layout_marginStart="150dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
